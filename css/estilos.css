@@ -28,4 +28,12 @@ section {
   background: #eef1f5;
 }
 
-/* TODO CSS-5: define aquí las clases .ok (fondo verde claro) y .error (fondo rojo claro) */
+/* Clases de estado para el ejercicio 2 */
+.ok {
+  background: #d4edda;
+  color: #155724;
+}
+.error {
+  background: #f8d7da;
+  color: #721c24;
+}

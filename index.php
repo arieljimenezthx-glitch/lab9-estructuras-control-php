@@ -171,13 +171,16 @@ $totalPagar = $subtotal + ($subtotal * 0.07);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="lab9-huella" content="<?= $huella ?>">
   <title>Lab 9 · Estructuras de control</title>
-  <!-- TODO CSS-1: enlaza css/estilos.css (CSS externo) -->
-  <!-- TODO CSS-2: agrega un <style> interno con al menos 2 reglas -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    h2 { color: #1f3a5f; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+  </style>
 </head>
 <body>
   <header>
-    <!-- TODO CSS-3: agrega un atributo style (CSS en línea) a este h1 -->
-    <h1>Laboratorio #9 · Estructuras de control</h1>
+    <h1 style="margin: 0; font-size: 1.6rem;">Laboratorio #9 · Estructuras de control</h1>
     <p id="autor">Autor: <?= $nombreCompleto ?></p>
   </header>
 
@@ -206,8 +209,7 @@ $totalPagar = $subtotal + ($subtotal * 0.07);
 
     <section id="ej2">
       <h2>Ejercicio 2 · Notas</h2>
-      <!-- TODO CSS-4: agrega la clase "ok" o "error" con PHP según el estado -->
-      <p id="ej2-res" class="resultado">Promedio: <?= number_format($promedio, 2) ?> | Letra: <?= $letra ?> | Estado: <?= $estado ?> | Cuadro de honor: <?= $honor ?></p>
+      <p id="ej2-res" class="resultado <?= ($promedio >= 70) ? 'ok' : 'error' ?>">Promedio: <?= number_format($promedio, 2) ?> | Letra: <?= $letra ?> | Estado: <?= $estado ?> | Cuadro de honor: <?= $honor ?></p>
     </section>
 
     <section id="ej3">
