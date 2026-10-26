@@ -10,3 +10,11 @@ Desarrollo Web · Módulo III · Unidad II (PHP)
 
 El resultado oficial lo ves en la pestaña **Actions** de tu fork (resumen del job "Autograde Lab 9").
 Este autograde **no envía tus datos a ningún servidor**.
+
+## Entrega
+
+- Estudiante: Ariel Jimenez
+- Semilla: 259
+- Rama: `lab9-jimenez-ariel`
+- Ejercicios completados: ej0 (tipos de datos), ej1 (if/elseif/else), ej2 (elseif, ternario y &&), ej3 (switch), ej4 (match), ej5 (reto integrador) y CSS (externo, interno, en línea y clases ok/error).
+- Prueba local: `php autograde.php`
