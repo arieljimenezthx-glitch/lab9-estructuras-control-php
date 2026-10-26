@@ -25,7 +25,26 @@ $descuento = 0.0;
 $vacio = null;
 
 // ---------- EJERCICIO 1 · Boleto de cine (if / elseif / else) ----------
-// TODO 1
+if ($edad < 12) {
+    $categoria = 'Niño';
+    $precio = 3.00;
+} elseif ($edad < 18) {
+    $categoria = 'Joven';
+    $precio = 4.50;
+} elseif ($edad < 60) {
+    $categoria = 'Adulto';
+    $precio = 7.00;
+} else {
+    $categoria = 'Jubilado';
+    $precio = 3.50;
+}
+
+if ($dia == 3) {
+    $precio = $precio * 0.5;
+    $miercoles = 'Sí';
+} else {
+    $miercoles = 'No';
+}
 
 // ---------- EJERCICIO 2 · Notas (elseif, ternario, &&) ----------
 // TODO 2
@@ -76,7 +95,7 @@ $vacio = null;
 
     <section id="ej1">
       <h2>Ejercicio 1 · Boleto de cine</h2>
-      <p id="ej1-res"><!-- TODO 1 --></p>
+      <p id="ej1-res">Categoría: <?= $categoria ?> | Precio final: B/. <?= number_format($precio, 2) ?> | Miércoles 50%: <?= $miercoles ?></p>
     </section>
 
     <section id="ej2">
